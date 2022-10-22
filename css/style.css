@@ -832,3 +832,20 @@ a:focus {
     bottom: 30px;
     cursor: pointer;
 }
+
+/*---------------------------- preloader area ----------------------------*/
+ #loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  background-color: #fff;
+  z-index: 1100 ;
+
+
+}
+/*---------------------------- scroll to top area ----------------------------*/
