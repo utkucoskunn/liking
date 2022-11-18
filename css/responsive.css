@@ -4,7 +4,6 @@
         margin-left: 35%;
     }
 
-
 }
 
 @media (max-width: 1120px) {
@@ -177,11 +176,13 @@
         width: 100%;
     }
     .box_main {
-        width: 50%;
+        width: 70%;
         margin-left: 25%;
     }
     .price-big{
+        font-weight: 300;
         margin-left: 33%;
+        font-size: 15px;
     }
 }
 
@@ -226,17 +227,30 @@
         height: auto;
     }
     .box_main {
-        width: 50%;
-        margin-left: 25%;
+        width: 60%;
+        margin-left: 22%;
     }
     .price-big{
-        margin-left: 27%;
+        margin-left: 25%;
     }
 }
 
 @media (max-width: 480px) {
+    .about_section {
+ width: auto;
+    height: auto;
+    }
     .hero_area {
         height: auto;
+    }
+    .about_section h2 {
+
+        font-size: 50px;
+    }
+
+    .product_section h2 {
+
+        font-size: 50px;
     }
 
 }
@@ -253,6 +267,15 @@
 
     .tasty_section h2 span {
         font-size: 50px;
+    }
+    .about_section h2 {
+
+        font-size: 35px;
+    }
+
+    .product_section h2 {
+
+        font-size: 35px;
     }
 }
 
