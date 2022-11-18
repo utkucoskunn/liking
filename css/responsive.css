@@ -1,3 +1,12 @@
+@media (max-width: 2000px) {
+    .box_main {
+        width: 30%;
+        margin-left: 35%;
+    }
+
+
+}
+
 @media (max-width: 1120px) {
     .hero_area {
         height: auto;
@@ -13,6 +22,14 @@
         top: 50%;
         right: 1%;
         margin-top: 5px;
+    }
+
+    .box_main {
+        width: 50%;
+        margin-left: 28%;
+    }
+    .price-big{
+        margin-left: 38%;
     }
 }
 
@@ -47,11 +64,27 @@
         justify-content: space-between;
 
     }
+
+    .box_main {
+        width: 50%;
+        margin-left: 28%;
+    }
+    .price-big{
+        margin-left: 33%;
+    }
 }
 
 @media (max-width: 920px) {
     .contact1_section {
         background-image: none;
+    }
+
+    .box_main {
+        width: 50%;
+        margin-left: 25%;
+    }
+    .price-big{
+        margin-left: 33%;
     }
 }
 
@@ -143,6 +176,13 @@
     .contact_section .contact_box input {
         width: 100%;
     }
+    .box_main {
+        width: 50%;
+        margin-left: 25%;
+    }
+    .price-big{
+        margin-left: 33%;
+    }
 }
 
 @media (max-width: 576px) {
@@ -185,18 +225,27 @@
     .hero_area {
         height: auto;
     }
+    .box_main {
+        width: 50%;
+        margin-left: 25%;
+    }
+    .price-big{
+        margin-left: 27%;
+    }
 }
 
 @media (max-width: 480px) {
     .hero_area {
         height: auto;
     }
+
 }
 
 @media (max-width: 400px) {
     .hero_area {
         height: auto;
     }
+
     .tasty_section h2 {
 
         font-size: 50px;

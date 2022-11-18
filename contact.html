@@ -57,10 +57,10 @@
                                 <a class="nav-link" href="about.html"> Hakkımızda</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="products.html"> Ürünlerimiz </a>
+                                <a class="nav-link" href="services.html"> Hizmetlerimiz </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Toptan Satış</a>
+                                <a class="nav-link" href="products.html">Ürünlerimiz</a>
                             </li>
                         </ul>
 
@@ -77,7 +77,7 @@
     <!-- end header section -->
 </div>
 
-<!-- tasty section -->
+<!-- Banner section -->
 <section class="about_section">
     <div class="container_fluid">
         <h2>
@@ -85,7 +85,7 @@
         </h2>
     </div>
 </section>
-<!-- end tasty section -->
+<!-- end banner section -->
 
 <!-- contact section -->
 <section class="contact_section layout_padding-top">
@@ -106,28 +106,59 @@
                     <div class="contact_form-container">
                         <div>
                             <div>
-                                <input type="text" placeholder="İsim">
+                                <input type="text" id="name" placeholder="İsim">
                             </div>
                             <div>
-                                <input type="email" placeholder="Email">
+                                <input type="text" id="phone" placeholder="Telefon">
                             </div>
                             <div>
-                                <input type="text" placeholder="Telefon Numarası">
+                                <input type="email" id="email" placeholder="Email">
                             </div>
-                            <div class="">
-                                <input type="text" placeholder="Mesajınız">
+                            <div class="mt-5">
+                                <input type="text" id="message" placeholder="Mesaj">
                             </div>
-                            <div class=" d-flex justify-content-center justify-content-sm-start">
-                                <button type="submit">
-                                    Send
+                            <div class="mt-5">
+                                <button id="btn">
+                                    Gönder
                                 </button>
                             </div>
                         </div>
-
                     </div>
-
                 </form>
             </div>
+            <script src="https://smtpjs.com/v3/smtp.js">
+            </script>
+
+            <script>
+                let btn = document.getElementById('btn');
+                btn.addEventListener('click', function (e) {
+                    e.preventDefault()
+                    let name = document.getElementById('name').value;
+                    document.getElementById('name').value="";
+                    let phone = document.getElementById('phone').value;
+                    document.getElementById('phone').value="";
+                    let email = document.getElementById('email').value;
+                    document.getElementById('email').value="";
+                    let message = document.getElementById('message').value;
+                    document.getElementById('message').value="";
+                    let body = 'name: ' + name + '<br/>' +
+                        'phone: ' + phone + '<br/>' +
+                        'email: ' + email + '<br/>' +
+                        'message: ' + message + '<br/>'
+                    ;
+
+                    Email.send({
+                        SecureToken: "1ba33ee2-cead-4eba-88f3-fb0b1aa82458",
+                        To: 'umcyazilim@gmail.com',
+                        From: "umcyazilim@gmail.com",
+                        Subject: "Bilgi almak istiyorum ",
+                        Body: body
+                    }).then(
+                        message => alert(message),
+                    );
+                })
+
+            </script>
             <div class="col-md-6">
                 <div class="contact_info">
                     <a href="">
@@ -155,7 +186,11 @@
 </section>
 <!-- end contact section -->
 
-<a class="chat-ac" target="_blank" href="https://api.whatsapp.com/send?phone=+90555 123 45 67&amp;text= Bilgi almak istiyorum." rel="nofollow"></a>
+<!-- chat section -->
+<a class="chat-ac" target="_blank"
+   href="https://api.whatsapp.com/send?phone=+90554 428 81 36&amp;text= Nar suyu hakkında bilgi almak istiyorum."
+   rel="nofollow"></a>
+<!-- end chat section -->
 
 <!-- footer section -->
 <section class="container-fluid footer_section layout_padding2-top">
@@ -170,7 +205,6 @@
                 <img src="images/twitter.png" alt="">
             </a>
         </div>
-
         <div>
             <a href="">
                 <img src="images/instagram.png" alt="">
@@ -179,8 +213,8 @@
     </div>
     <div class="container">
         <p>
-            Copyright &copy; 2022 All Rights Reserved By
-            <a href="https://html.design/">UMC</a>
+            Copyright &copy; 2022 All Rights Reserved By Liking A.Ş.
+
         </p>
     </div>
 </section>
