@@ -27,7 +27,8 @@
         width: 50%;
         margin-left: 28%;
     }
-    .price-big{
+
+    .price-big {
         margin-left: 38%;
     }
 }
@@ -68,7 +69,8 @@
         width: 50%;
         margin-left: 28%;
     }
-    .price-big{
+
+    .price-big {
         margin-left: 33%;
     }
 }
@@ -82,7 +84,8 @@
         width: 50%;
         margin-left: 25%;
     }
-    .price-big{
+
+    .price-big {
         margin-left: 33%;
     }
 }
@@ -175,11 +178,13 @@
     .contact_section .contact_box input {
         width: 100%;
     }
+
     .box_main {
         width: 70%;
         margin-left: 25%;
     }
-    .price-big{
+
+    .price-big {
         font-weight: 300;
         margin-left: 33%;
         font-size: 15px;
@@ -226,23 +231,27 @@
     .hero_area {
         height: auto;
     }
+
     .box_main {
         width: 60%;
         margin-left: 22%;
     }
-    .price-big{
+
+    .price-big {
         margin-left: 25%;
     }
 }
 
 @media (max-width: 480px) {
     .about_section {
- width: auto;
-    height: auto;
+        width: auto;
+        height: auto;
     }
+
     .hero_area {
         height: auto;
     }
+
     .about_section h2 {
 
         font-size: 50px;
@@ -268,14 +277,18 @@
     .tasty_section h2 span {
         font-size: 50px;
     }
+
     .about_section h2 {
 
         font-size: 35px;
     }
 
     .product_section h2 {
-
+margin-bottom: 10px;
         font-size: 35px;
+    }
+    .slider_item-detail h1{
+        font-size: 40px;
     }
 }
 
