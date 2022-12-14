@@ -122,7 +122,9 @@
 
         display: flex;
         justify-content: center;
-
+    }
+    .fruit_img-box {
+       margin-left: 25%;
     }
 
     .contact_section {
